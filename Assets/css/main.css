@@ -1,0 +1,443 @@
+@charset "UTF-8";
+* {
+  font-family: "Roboto", sans-serif;
+  text-decoration: none;
+}
+
+:root {
+  --primary: #9356dc;
+  --secondaire: #ff79da;
+  --tertiaire: #99e2d0;
+  --green-font: #008766;
+  --background: #f6f6f6;
+  --button-gradiant: var(
+    --button-gradient,
+    linear-gradient(175deg, #9356dc 0%, #ff79da 100%)
+  );
+  --light-grey: #eaeaea;
+  --dark-grey: #7e7e7e;
+  --darker-grey: #353535;
+}
+
+body {
+  margin: 0 auto;
+  font-family: "Roboto", sans-serif;
+  text-decoration: none;
+}
+
+/*Loader menu*/
+.loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-position: center;
+  z-index: 10;
+  background: #d6b5ff;
+  opacity: 1;
+  animation: loader 3s linear forwards;
+  position: absolute;
+  width: 100%;
+  height: 110%;
+}
+.loader-container .dot {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: var(--green-font);
+  margin: 0 15px;
+  animation: loader infinite 0.4s alternate;
+}
+.loader-container .d2 {
+  animation-delay: 0.05s;
+}
+.loader-container .d3 {
+  animation-delay: 0.1s;
+}
+@keyframes loader {
+  100% {
+    transform: translateY(-30px);
+  }
+  0% {
+    opacity: 0;
+    z-index: 10;
+  }
+  20% {
+    opacity: 0.8;
+    z-index: 10;
+  }
+  80% {
+    opacity: 0.8;
+    z-index: 10;
+  }
+  100% {
+    opacity: 0;
+    z-index: -10;
+  }
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+header .shadow {
+  display: flex;
+  width: 100%;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+  justify-content: center;
+}
+header .logo {
+  padding: 14px 89px;
+}
+header img {
+  height: 32px;
+  width: 162px;
+}
+
+/*--------MAIN-CONTAINER----- */
+/*Code généraliser*/
+h2 {
+  font-family: "Shrikhand", sans-serif;
+}
+
+/*Réservation Section*/
+.réservations .map {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  padding: 16px 0px;
+  gap: 17px;
+  background-color: var(--light-grey);
+}
+.réservations .map input {
+  margin: 0;
+  flex-shrink: 0;
+  border: none;
+  background-color: #eaeaea;
+  width: 109px; /*un text-ailgn center peut aider*/
+}
+.réservations .explorer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 287px;
+  background-color: var(--background);
+}
+.réservations .explorer h1 {
+  font-size: 1.5em;
+  font-weight: 700;
+  padding: 0 79px;
+}
+.réservations .explorer p {
+  margin: 0 0 27px 0;
+  padding: 0 30px;
+  font-size: 1.125em;
+  font-weight: 300;
+  flex-shrink: 0;
+}
+.réservations .explorer .bt-exploré {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 218px;
+  height: 50px;
+  border-radius: 25px;
+  text-align: center;
+  flex-shrink: 0;
+  color: #fff;
+  font-weight: 600;
+  border: none;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+  background: var(--button-gradiant);
+  transition: all 0.3s ease-in-out 0.1s;
+}
+.réservations .explorer .bt-exploré a {
+  color: #fff;
+}
+.réservations .explorer .bt-exploré:hover {
+  filter: brightness(1.15);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.35);
+  transition: all 0.3s ease-in-out 0.1s;
+  cursor: pointer;
+}
+
+/*Fonctionement section*/
+.fonctionnement {
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px 68px 20px;
+  /*width: 92%;*/
+}
+.fonctionnement h2 {
+  margin: 48px 0 26px 0;
+  align-items: flex-start;
+}
+.fonctionnement .bt-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+}
+.fonctionnement .bt-container {
+  display: flex;
+  position: relative;
+  width: 100%;
+}
+.fonctionnement .bt-container:hover i {
+  color: var(--primary);
+  transition: 0.4s;
+}
+.fonctionnement .numbers {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 23px;
+  left: -10px;
+  border-radius: 50px;
+  width: 24px;
+  height: 24px;
+  background-color: var(--primary);
+  color: #fff;
+}
+.fonctionnement .bt-button {
+  display: flex;
+  flex-direction: row;
+  width: 100% !important;
+  height: 72px;
+  gap: 20px;
+  align-items: center;
+  border-radius: 20px;
+  padding: 0 30px;
+  width: 247px;
+  background-color: #fff;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+}
+.fonctionnement .bt-button span {
+  color: #353535 !important;
+  font-weight: 600;
+}
+.fonctionnement .bt-button i {
+  color: var(--dark-grey);
+  margin-right: 23px;
+}
+
+/*Resaurants section*/
+#restaurants {
+  display: flex;
+  flex-direction: column;
+  padding: 0 18px;
+  background-color: var(--light-grey);
+  padding-bottom: 66px;
+}
+#restaurants h2 {
+  margin: 0;
+  margin: 54px 0 24px 0;
+}
+#restaurants h3 {
+  font-size: 1.125em;
+  font-weight: 700;
+}
+#restaurants p {
+  font-weight: 300;
+}
+#restaurants .restaurants-box {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 18px;
+}
+#restaurants .resto {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  /*Code test Début*/
+  /*Animation du Heart*/
+}
+#restaurants .resto .nouveau {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 80px;
+  height: 29px;
+  top: 20px;
+  right: 20px;
+  border-radius: 2px;
+  background-color: var(--tertiaire);
+  color: var(--green-font);
+  font-weight: 600;
+}
+#restaurants .resto img {
+  width: 100%;
+  height: 231px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  overflow: hidden;
+  border-radius: 20px 20px 0 0;
+}
+#restaurants .resto .content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 55px;
+  background-color: #fff;
+  color: #000;
+  border-radius: 0 0 20px 20px;
+  padding: 16px 13px 12px 13px;
+  margin-top: -3px;
+}
+#restaurants .resto .heart-box {
+  display: flex;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+#restaurants .resto .heart-pop {
+  display: flex;
+  align-items: center;
+  margin-top: -1px;
+  margin-right: -24px;
+  z-index: 0;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  opacity: 0;
+  line-height: 1;
+  transition: all 0.3s ease-in-out 0.1s;
+}
+#restaurants .resto .heart-pop:active {
+  transition: all 0.3s ease-in-out;
+  opacity: 1;
+  background-image: linear-gradient(200.64deg, #9356dc -5.2%, #ff79da 110.74%);
+}
+#restaurants .resto .heart-base {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  transition: all 0.3s ease-in-out 0.1s;
+}
+#restaurants .resto .txt {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+#restaurants .resto h3 {
+  margin: 0;
+}
+#restaurants .resto p {
+  margin: 0;
+}
+
+/*------- FOOTER -------  */
+footer {
+  display: flex;
+  flex-direction: column;
+  padding: 22px 25px;
+  gap: 16px;
+  background-color: var(--darker-grey);
+}
+footer img {
+  height: 27px;
+  width: 137.5px;
+}
+footer .content {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+footer h3 {
+  margin: 0;
+  color: #fff;
+  font-weight: 500;
+}
+footer h3 .fork {
+  margin-right: 16px;
+}
+footer h3 .hands {
+  margin-right: 10px;
+}
+
+/*Responsive*/
+/*Tablette*/
+@media screen and (min-width: 768px) {
+  .fonctionnement .bt-box {
+    flex-direction: row;
+    width: 100%;
+  }
+  #restaurants {
+    padding: 0 50px;
+    padding-bottom: 30px;
+  }
+  #restaurants h2 {
+    margin-top: 30px;
+  }
+  #restaurants .restaurants-box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 40px;
+  }
+  #restaurants .resto {
+    width: 47%;
+  }
+  footer {
+    flex-direction: row-reverse;
+    gap: 30px;
+    padding: 30px 25px;
+  }
+  footer .content {
+    flex-direction: row;
+    gap: 30px;
+  }
+}
+/*Desktop*/
+@media screen and (min-width: 1024px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  header {
+    width: 100%;
+  }
+  header .shadow {
+    box-shadow: none;
+  }
+  .main-container {
+    width: 100%;
+  }
+  h1 {
+    font-size: 3em !important;
+  }
+  .fonctionnement {
+    padding: 50px 180px;
+  }
+  .fonctionnement .bt-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .fonctionnement .bt-button {
+    width: 70% !important;
+  }
+  #restaurants {
+    padding: 0 180px;
+    padding-bottom: 30px;
+  }
+  #restaurants .resto {
+    width: 46%;
+  }
+  footer {
+    gap: 50px;
+  }
+  footer .content {
+    gap: 50px;
+  }
+}/*# sourceMappingURL=main.css.map */

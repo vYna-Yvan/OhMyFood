@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="./Assets/css/main.css" />
+
+    <title>OhMyFood</title>
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="loader-container">
+        <div class="dot d1"></div>
+        <div class="dot d2"></div>
+        <div class="dot d3"></div>
+      </div>
+
+      <header>
+        <div class="shadow">
+          <div class="logo">
+            <img src="Assets/Images/logo/ohmyfood.png" alt="logo" />
+          </div>
+        </div>
+      </header>
+
+      <main>
+        <section class="réservations">
+          <form class="map">
+            <label><i class="fa-solid fa-location-dot"></i></label>
+            <input type="text" placeholder="Paris, Belleville" />
+          </form>
+
+          <div class="explorer">
+            <h1>Réserver le menu qui vous convient</h1>
+            <p>
+              Découvrez des restaurants d'exception,sélectioné par nos soins.
+            </p>
+            <a href="#restaurants">
+              <div class="bt-exploré">Explorer nos restaurants</div>
+            </a>
+          </div>
+        </section>
+
+        <section class="fonctionnement">
+          <h2>Fonctionnement</h2>
+
+          <div class="bt-box">
+            <div class="bt-container">
+              <div class="numbers">1</div>
+              <a class="bt-button" href="#">
+                <i class="fa-solid fa-mobile-screen-button"></i>
+                <span>Choissez un restaurant</span>
+              </a>
+            </div>
+
+            <div class="bt-container">
+              <div class="numbers">2</div>
+              <a class="bt-button" href="#">
+                <i class="fa-solid fa-bars"></i>
+                <span>Composer votre menu</span>
+              </a>
+            </div>
+
+            <div class="bt-container">
+              <div class="numbers">3</div>
+              <a class="bt-button" href="#">
+                <i class="fa-solid fa-store"></i>
+                <span>Dégustez au restaurant</span>
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <section id="restaurants">
+          <h2>Restaurants</h2>
+
+          <div class="restaurants-box">
+            <!--Code test début-->
+
+            <!--code test fin-->
+            <article class="resto">
+              <div class="nouveau">Nouveau</div>
+              <a href="./restaurants/la_palette_du_goût.html">
+                <img
+                  src="Assets/Images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
+                  alt=""
+                />
+                <div class="content">
+                  <div class="txt">
+                    <h3>La palette du goût</h3>
+                    <p>Ménilmontant</p>
+                  </div>
+                  <div class="heart-box">
+                    <i class="heart-pop fa-solid fa-heart fa-xl"></i>
+                    <i class="heart-base fa-regular fa-heart fa-xl"></i>
+                  </div>
+                </div>
+              </a>
+            </article>
+
+            <article class="resto">
+              <div class="nouveau">Nouveau</div>
+              <a href="./restaurants/la_note_enchantée.html">
+                <img
+                  src="Assets/Images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg"
+                  alt=""
+                />
+                <div class="content">
+                  <div class="txt">
+                    <h3>La note enchantée</h3>
+                    <p>Charonne</p>
+                  </div>
+                  <div class="heart-box">
+                    <i class="heart-pop fa-solid fa-heart fa-xl"></i>
+                    <i class="heart-base fa-regular fa-heart fa-xl"></i>
+                  </div>
+                </div>
+              </a>
+            </article>
+
+            <article class="resto">
+              <a href="./restaurants/a_la_française.html">
+                <img
+                  src="Assets/Images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
+                  alt=""
+                />
+                <div class="content">
+                  <div class="txt">
+                    <h3>À la française</h3>
+                    <p>Cité Rouge</p>
+                  </div>
+                  <div class="heart-box">
+                    <i class="heart-pop fa-solid fa-heart fa-xl"></i>
+                    <i class="heart-base fa-regular fa-heart fa-xl"></i>
+                  </div>
+                </div>
+              </a>
+            </article>
+
+            <article class="resto">
+              <a href="./restaurants/le_délice_des_sens.html">
+                <img
+                  src="Assets/Images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
+                  alt=""
+                />
+                <div class="content">
+                  <div class="txt">
+                    <h3>Le délice des sens</h3>
+                    <p>Folie-Méricourt</p>
+                  </div>
+                  <div class="heart-box">
+                    <i class="heart-pop fa-solid fa-heart fa-xl"></i>
+                    <i class="heart-base fa-regular fa-heart fa-xl"></i>
+                  </div>
+                </div>
+              </a>
+            </article>
+          </div>
+        </section>
+      </main>
+      <footer>
+        <img src="Assets/Images/logo/ohmyfood-White.png" alt="" />
+        <div class="content">
+          <h3>
+            <i class="fa-solid fa-utensils fork"></i>Proposer un restaurant
+          </h3>
+          <h3>
+            <i class="fa-solid fa-handshake-angle hands"></i>Devenir partenaire
+          </h3>
+          <h3>Mentions légales</h3>
+          <a href="mailto:someone@example.com"><h3>Contact</h3></a>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
