@@ -35,7 +35,7 @@ body {
   animation: loader 3s linear forwards;
   position: absolute;
   width: 100%;
-  height: 110%;
+  height: 120% !important;
 
   .dot {
     width: 50px;
